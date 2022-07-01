@@ -1,4 +1,5 @@
-package com.example.practice_29_06_22
+package com.example.practice_29_06_22.first
+
 
  data class Person(var name:String, var height:Int, var weight:Double, var age:Int) {
 
