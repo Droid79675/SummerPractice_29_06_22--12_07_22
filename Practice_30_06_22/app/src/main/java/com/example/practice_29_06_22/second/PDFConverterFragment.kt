@@ -15,7 +15,7 @@ class PDFConverterFragment : Fragment(R.layout.fragment_pdf_file_converter) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val text = arguments?.getString(TtsSpan.ARG_TEXT).orEmpty()
+        val text = arguments?.getString(ARG_TEXT).orEmpty()
 
         if (text.isNotEmpty()) {
             Snackbar.make(view, text, Snackbar.LENGTH_LONG).show()
@@ -28,12 +28,12 @@ class PDFConverterFragment : Fragment(R.layout.fragment_pdf_file_converter) {
 
 
     companion object{
-        private const val ARG_TEXT ="bimbimbombom"
+        private const val ARG_TEXT =""
         fun createBundle(className: String): Bundle {
             val bundle = Bundle()
             bundle.putString(
-                className,
-                ARG_TEXT
+                ARG_TEXT,
+                className
             )
             return bundle
         }
