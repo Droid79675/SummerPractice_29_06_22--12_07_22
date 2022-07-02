@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.34" />
+
+
+    <ImageView
+        android:id="@+id/iv_funnyPicture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/scout_stare"
+        app:layout_constraintDimensionRatio="5  :3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id = "@+id/et_inputWindow_name"
+
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Input Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/gl_hor" />
+
+    <EditText
+        android:id = "@+id/et_inputWindow_height"
+
+
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Input Height"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_inputWindow_name" />
+
+    <EditText
+        android:id = "@+id/et_inputWindow_weight"
+
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Input Weight"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_inputWindow_height" />
+
+    <EditText
+        android:id = "@+id/et_inputWindow_age"
+
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Input Age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/et_inputWindow_weight" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_inputWindow_age" />
+
+    <TextView
+        android:id="@+id/tv_splash"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/red"
+        android:padding="16dp"
+        android:text=""
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
