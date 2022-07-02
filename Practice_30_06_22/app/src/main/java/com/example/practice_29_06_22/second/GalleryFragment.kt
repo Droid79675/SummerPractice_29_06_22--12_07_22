@@ -15,7 +15,7 @@ class GalleryFragment : Fragment(R.layout.fragment_gallery) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentGalleryBinding.bind(view)
         with(binding){
-            val className = FileDispatcherFragment::class.qualifiedName
+            val className = GalleryFragment::class.qualifiedName
             btnFileDispatcher.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_galleryFragment_to_PDFConverter,

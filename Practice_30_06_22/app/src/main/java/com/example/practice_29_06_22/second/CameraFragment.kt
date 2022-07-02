@@ -15,7 +15,7 @@ class CameraFragment : Fragment(R.layout.fragment_camera) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCameraBinding.bind(view)
         with(binding){
-            val className = FileDispatcherFragment::class.qualifiedName
+            val className = CameraFragment::class.qualifiedName
             btnFileDispatcher.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_cameraFragment_to_PDFConverter,

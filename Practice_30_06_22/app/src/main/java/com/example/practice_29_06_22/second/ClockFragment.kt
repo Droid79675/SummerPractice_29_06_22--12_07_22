@@ -15,7 +15,7 @@ class ClockFragment : Fragment(R.layout.fragment_clock) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentClockBinding.bind(view)
         with(binding){
-            val className = FileDispatcherFragment::class.qualifiedName
+            val className = ClockFragment::class.qualifiedName
             btnFileDispatcher.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_clockFragment_to_PDFConverter,
