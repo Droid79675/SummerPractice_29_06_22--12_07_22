@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practice_30_06_22</string>
+
+    <string name="menu_clock">Clock</string>
+    <string name="menu_calculator">Calculator</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_fileDispatcher">FileDispatcher</string>
+
+</resources>

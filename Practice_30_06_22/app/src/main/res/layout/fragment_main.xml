@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".second.MainFragment">
+
+
+    <Button
+        android:id="@+id/btn_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Navigate to clock"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Navigate to calculator"
+        app:layout_constraintBottom_toTopOf="@id/btn_clock" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Navigate to camera"
+        android:backgroundTint="@color/sky_blue"
+        app:layout_constraintBottom_toTopOf="@id/btn_calculator" />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Navigate to gallery"
+        app:layout_constraintBottom_toTopOf="@id/btn_camera"/>
+
+    <Button
+        android:id="@+id/btn_fileDispatcher_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/sky_blue"
+        android:text="Navigate to fileDispatcher"
+        app:layout_constraintBottom_toTopOf="@id/btn_gallery"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

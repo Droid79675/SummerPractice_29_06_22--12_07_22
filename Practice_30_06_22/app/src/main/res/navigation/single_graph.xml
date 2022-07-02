@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/clockFragment"
+        android:name="com.example.practice_29_06_22.second.ClockFragment"
+        android:label="ClockFragment"
+        tools:layout="@layout/fragment_clock">
+        <action
+            android:id="@+id/action_fileDispatcherFragment_to_PDFConverter"
+            app:destination="@id/PDFConverter" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.practice_29_06_22.second.CalculatorFragment"
+        android:label="CalculatorFragment"
+        tools:layout="@layout/fragment_calculator">
+        <action
+            android:id="@+id/action_fileDispatcherFragment_to_PDFConverter"
+            app:destination="@id/PDFConverter" />
+    </fragment>
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.example.practice_29_06_22.second.CameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_fileDispatcherFragment_to_PDFConverter"
+            app:destination="@id/PDFConverter" />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.practice_29_06_22.second.GalleryFragment"
+        android:label="GalleryFragment"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_fileDispatcherFragment_to_PDFConverter"
+            app:destination="@id/PDFConverter" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileDispatcherFragment"
+        android:name="com.example.practice_29_06_22.second.FileDispatcherFragment"
+        android:label="FileDispatcherFragment"
+        tools:layout="@layout/fragment_file_dispatcher">
+        <action
+            android:id="@+id/action_fileDispatcherFragment_to_PDFConverter"
+            app:destination="@id/PDFConverter" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.practice_29_06_22.second.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fileDispatcherFragment"
+            app:destination="@id/fileDispatcherFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_clockFragment"
+            app:destination="@id/clockFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PDFConverter"
+        android:name="com.example.practice_29_06_22.second.PDFConverterFragment"
+        android:label="PDFConverter"
+        tools:layout="@layout/fragment_pdf_file_converter"/>
+</navigation>

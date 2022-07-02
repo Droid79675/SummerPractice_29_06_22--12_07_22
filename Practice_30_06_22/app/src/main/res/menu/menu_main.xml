@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/clockFragment"
+        android:enabled="true"
+        android:icon="@drawable/clock"
+        android:title="@string/menu_clock" />
+    <item
+        android:id="@+id/calculatorFragment"
+        android:enabled="true"
+        android:icon="@drawable/calculator"
+        android:title="@string/menu_calculator" />
+    <item
+        android:id="@+id/cameraFragment"
+        android:enabled="true"
+        android:icon="@drawable/camera"
+        android:title="@string/menu_camera" />
+    <item
+        android:id="@+id/galleryFragment"
+        android:enabled="true"
+        android:icon="@drawable/gallery"
+        android:title="@string/menu_gallery" />
+    <item
+        android:id="@+id/fileDispatcherFragment"
+        android:enabled="true"
+        android:icon="@drawable/file_dispatcher"
+        android:title="@string/menu_fileDispatcher" />
+</menu>
