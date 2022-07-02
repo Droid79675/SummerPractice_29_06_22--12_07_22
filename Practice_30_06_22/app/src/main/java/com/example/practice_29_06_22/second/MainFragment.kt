@@ -18,20 +18,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentMainBinding.bind(view)
         with(binding){
-            btnCalculator.setOnClickListener{
-                findNavController().navigate(R.id.action_mainFragment_to_calculatorFragment)
-            }
-            btnClock.setOnClickListener {
-                findNavController().navigate(R.id.action_mainFragment_to_clockFragment)
-            }
-            btnCamera.setOnClickListener {
-                findNavController().navigate(R.id.action_mainFragment_to_cameraFragment)
-            }
-            btnGallery.setOnClickListener {
-                findNavController().navigate(R.id.action_mainFragment_to_galleryFragment)
-            }
-            btnFileDispatcherMain.setOnClickListener {
-                findNavController().navigate(R.id.action_mainFragment_to_fileDispatcherFragment)
+            btnPDFConverter.setOnClickListener{
+                findNavController().navigate(R.id.action_mainFragment_to_PDFConverter)
             }
         }
 
