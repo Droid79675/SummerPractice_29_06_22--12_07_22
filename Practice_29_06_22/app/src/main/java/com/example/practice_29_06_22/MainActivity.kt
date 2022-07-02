@@ -1,10 +1,12 @@
-package com.example.practice_29_06_22
+package com.example.practice_29_06_22.first
+
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.practice_29_06_22.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -43,13 +45,12 @@ class MainActivity : AppCompatActivity() {
         else 0.0
         val age:Int = if(editText4?.text?.isNotEmpty() == true) editText4?.text.toString().toInt()
         else 0
-        val person = Person(name, height, weight, age)
-        var value:Double = person.calculateSmth()
-        return (if(person.name.length in 1..50 &&
-            person.height in 1..250 &&
-            person.weight in 1.0..250.0 &&
-            person.age in 1..150){
-            textView?.setText("Ответ: $value")
+        return (if(name.length in 1..50 &&
+            height in 1..250 &&
+            weight > 0 && weight < 250.0 &&
+            age in 1..150){
+            val person = Person(name, height, weight, age)
+            textView?.setText("Ответ: " + person.calculateSmth())
         } else{
             textView?.setText("Данные введены не корректно")
         })!!
