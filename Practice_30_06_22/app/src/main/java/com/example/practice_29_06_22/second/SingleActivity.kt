@@ -15,9 +15,7 @@ class SingleActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single)
-
         controller = (supportFragmentManager.findFragmentById(R.id.container) as NavHostFragment).navController
-
         val bottomView = findViewById<BottomNavigationView>(R.id.bottom_view)
         bottomView.setupWithNavController(controller)
     }

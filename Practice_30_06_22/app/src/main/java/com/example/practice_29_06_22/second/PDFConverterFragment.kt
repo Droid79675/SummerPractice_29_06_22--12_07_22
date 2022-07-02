@@ -7,11 +7,7 @@ import androidx.fragment.app.Fragment
 import com.example.practice_29_06_22.R
 import com.google.android.material.snackbar.Snackbar
 
-
 class PDFConverterFragment : Fragment(R.layout.fragment_pdf_file_converter) {
-
-
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -23,13 +19,9 @@ class PDFConverterFragment : Fragment(R.layout.fragment_pdf_file_converter) {
         }
     }
 
-
-
-
-
     companion object{
         private const val ARG_TEXT =""
-        fun createBundle(className: String): Bundle {
+        fun createBundle(className: String?): Bundle {
             val bundle = Bundle()
             bundle.putString(
                 ARG_TEXT,
@@ -39,7 +31,5 @@ class PDFConverterFragment : Fragment(R.layout.fragment_pdf_file_converter) {
         }
 
     }
-
-    
 
 }
