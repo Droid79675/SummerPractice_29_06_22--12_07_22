@@ -15,12 +15,14 @@ class FileDispatcherFragment : Fragment(R.layout.fragment_file_dispatcher) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentFileDispatcherBinding.bind(view)
         with(binding){
-            val className = Throwable()
-                .stackTrace[0]
-                .className
+            val className = FileDispatcherFragment::class.qualifiedName
             btnFileDispatcher.setOnClickListener {
-                findNavController().navigate(R.id.action_fileDispatcherFragment_to_PDFConverter,
-                PDFConverterFragment.createBundle(className))
+                findNavController()
+                    .navigate(
+                        R.id
+                            .action_fileDispatcherFragment_to_PDFConverter,
+                        PDFConverterFragment.createBundle(className)
+                    )
 
             }
         }

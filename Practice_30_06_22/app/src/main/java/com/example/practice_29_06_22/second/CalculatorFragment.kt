@@ -15,9 +15,7 @@ class CalculatorFragment : Fragment(R.layout.fragment_calculator) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentCalculatorBinding.bind(view)
         with(binding){
-            val className = Throwable()
-                .stackTrace[0]
-                .className
+            val className = FileDispatcherFragment::class.qualifiedName
             btnFileDispatcher.setOnClickListener {
                 findNavController().navigate(
                     R.id.action_calculatorFragment_to_PDFConverter,
